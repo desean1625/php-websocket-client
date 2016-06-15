@@ -19,7 +19,6 @@ More advanced using react stream select loop
 ```php
 include "./Websocket.php";
 include "./EventLoop/Factory.php";
-define('WEBSOCKET_CLIENT', true);
 $stream = fopen("wss://echo.websocket.org",1);
 $test = '{"setID":"YOURID","passwd":"ANYTHING"}';
 fwrite($stream, $test);
