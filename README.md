@@ -1,10 +1,12 @@
 # php-websocket-client
-stream wrapper for websockets
+
+##PHP websocket stream wrapper
+
+php stream wrapper for websockets
 
 Makes a websocket client easy.
 
-Limitations websocket packets larger than 8192 characters.
-This is a limitation of fread.
+
 usage:
 ```php
 include "./Websocket.php";
@@ -14,7 +16,7 @@ fwrite($stream, $test);
 $data = fread($stream,100000);
 print_r(json_decode($data));
 ```
-More advanced using react stream select loop
+More advanced websocket using react stream select loop
 
 ```php
 include "./Websocket.php";
